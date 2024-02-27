@@ -32,10 +32,13 @@
   border-color: black!important;
 } 
 
+
+//Testando estilização através de atributos criados por mim e dados pelo Angular
 div[teste] {
-  background-color: yellow;
+  background-color: yellow !important;
 }
 
+//Essa forma abaixo não é legal usar porque depois pra refatorar ou achar esse atributo dentro do código, não consegue... mas é interessante saber que podemos fazer dessa forma também
 div[_ngcontent-ng-c25030651] {
   background-color: blue;
 }

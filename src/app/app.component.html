@@ -2,4 +2,7 @@
   <app-card />
   <app-card-roxo />
 </div>
+<input type="text" id="meu-input" [value]="inputText" [disabled]="isDisabled"/>
+<button (click)="enableInput()">Habilitar</button>
+<button (click)="disableInput()">Desabilitar</button>
 <router-outlet></router-outlet>

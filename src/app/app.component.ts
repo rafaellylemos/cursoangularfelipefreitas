@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'projeto_v16';
+
+  inputText = "Texto Inicial";
+  isDisabled = true;
+
+  enableInput() {
+    this.isDisabled = false;
+  }
+
+  disableInput(){
+    this.isDisabled = true;
+  }  
 }
