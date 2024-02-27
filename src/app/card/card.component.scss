@@ -24,3 +24,10 @@
 :host ::ng-deep .card-cancel-button {
   background-color: purple !important;
 }
+
+//Att mat-slider Angular Material local
+:host 
+  ::ng-deep 
+    .mdc-slider__track--active_fill {
+  border-color: black!important;
+}

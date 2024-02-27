@@ -4,10 +4,7 @@
 }
 
 //Att mat-slider Angular Material
-.mdc-slider__track--active_fill {
-  border-color: greenyellow !important;
-}
-
 .mdc-slider__track--inactive {
-  background-color: brown !important;
+  background-color: red !important;
+  opacity: 100% !important;
 }
