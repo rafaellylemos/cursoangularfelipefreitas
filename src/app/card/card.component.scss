@@ -30,10 +30,12 @@
   ::ng-deep 
     .mdc-slider__track--active_fill {
   border-color: black!important;
+} 
+
+div[teste] {
+  background-color: yellow;
 }
 
-.global {
-  text-transform: uppercase;
-  background-color: green;
-  margin: 10px;
+div[_ngcontent-ng-c25030651] {
+  background-color: blue;
 }
