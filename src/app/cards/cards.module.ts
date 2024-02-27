@@ -5,6 +5,7 @@ import { CardRoxoButtonComponent } from '../card-roxo-button/card-roxo-button.co
 import { CardRoxoComponent } from '../card-roxo/card-roxo.component';
 import { CardComponent } from '../card/card.component';
 import { CardButtonCancelComponent } from '../card-button-cancel/card-button-cancel.component';
+import {MatSliderModule} from '@angular/material/slider';
 
 
 
@@ -15,7 +16,8 @@ import { CardButtonCancelComponent } from '../card-button-cancel/card-button-can
     CardRoxoButtonComponent,
     CardButtonCancelComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    MatSliderModule
   ],
   exports: [
     CardComponent,
