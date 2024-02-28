@@ -10,6 +10,8 @@ export class AppComponent {
 
   inputText = "Texto Inicial";
   isDisabled = true;
+  isRedButton = true;
+  isGreen = true;
 
   enableInput() {
     this.isDisabled = false;

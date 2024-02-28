@@ -9,5 +9,13 @@
 </div>
 <div class="testButton">
   <app-test-button />
+  <button [class.red-button]="true">Vermelho</button>
+  <button [class.green-button]="true" (click)="isGreen = true;">Verde</button>
+  <button [class.red-button]="isRedButton" (click)="isGreen = false;">Vermelho 2</button>
+  <br>
+  <button [class]="{
+    'red-button': !isGreen,
+    'green-button': isGreen,
+  }">Objeto</button>
 </div>
 <router-outlet></router-outlet>
