@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-card',
@@ -6,6 +6,6 @@ import { Component, ViewEncapsulation } from '@angular/core';
   styleUrls: ['./card.component.scss']
 })
 export class CardComponent {
-tipo:string = 'Simples';
-preco:number = 100;
+@Input() planType: string = '';
+@Input({ required: true }) planPrice: number = 0;
 }

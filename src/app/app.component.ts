@@ -8,6 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'projeto_v16';
 
+  cardPlanType = 'Simples';
+  cardPlanPrice = 100;
+
   inputText = "Texto Inicial";
   isDisabled = true;
   isRedButton = true;
