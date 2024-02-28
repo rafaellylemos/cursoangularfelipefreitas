@@ -7,8 +7,25 @@ import { Component } from '@angular/core';
 })
 export class TestButtonComponent {
   buttonTitle = 'Título do botão';
+  widthButton = '200px';
+  bgButton = 'red';
+  stylesObj = {
+    width: '300px',
+    backgroundColor: 'orange',
+  }
 
   onButtonClick() {
     this.buttonTitle = 'Título Alterado';
+  }
+
+  updateStylesObj(){
+    this.stylesObj = {
+      width: '400px',
+      backgroundColor: 'green'
+    }
+  }
+
+  updateWidth(){
+    this.widthButton = '500px';
   }
 }

@@ -1,3 +1,13 @@
 <button [attr.title]="buttonTitle">Teste Aqui!</button>
 
 <button (click)="onButtonClick()">Clique Aqui!</button>
+
+<button style="width: 100px; background-color: aqua;">Sem Style Binding!</button>
+
+<button [style.width]="widthButton" [style.background-color]="bgButton">Com Style Binding!</button>
+
+<button [style]="stylesObj">Style Binding Com Obj!</button>
+
+<button (click)="updateStylesObj()">Att Style Binding Com Obj!</button>
+
+<button (click)="updateWidth()">Att width!</button>
