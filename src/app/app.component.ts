@@ -16,6 +16,10 @@ export class AppComponent {
   isRedButton = true;
   isGreen = true;
 
+  handlePlanType(text: string) {
+    this.cardPlanType = text;
+  }
+
   enableInput() {
     this.isDisabled = false;
   }
