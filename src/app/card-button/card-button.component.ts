@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output, booleanAttribute } from '@angular/core';
 
 @Component({
   selector: 'app-card-button',
@@ -6,6 +6,8 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styleUrl: './card-button.component.scss'
 })
 export class CardButtonComponent {
+
+  @Input({transform: booleanAttribute}) buttonDesabled: boolean = false;
 
   @Output('buttonClick') buttonClickEmitter = new EventEmitter<boolean>();
 
