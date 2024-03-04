@@ -8,12 +8,14 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { TestButtonComponent } from './test-button/test-button.component';
 import { FormularioComponent } from './formulario/formulario.component';
 import { FormsModule } from '@angular/forms';
+import { NgifComponent } from './ngif/ngif.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TestButtonComponent,
     FormularioComponent,
+    NgifComponent,
   ],
   imports: [
     BrowserModule,
