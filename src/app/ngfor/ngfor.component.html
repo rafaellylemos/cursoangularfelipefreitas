@@ -1,0 +1,6 @@
+<div class="list">
+  <div class="item" *ngFor="let person of listPeople; let i = index; let isOdd = odd" [class.item__highlighted]="personSelectedIndex === i" [class.item__odd]="isOdd" (click)="selectPerson(i)">
+    <p class="item__name">{{ i + 1 }} - {{ person.name }}</p>
+    <p class="item__age">{{ person.age }} anos</p>
+  </div>
+</div>

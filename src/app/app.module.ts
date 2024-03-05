@@ -9,6 +9,7 @@ import { TestButtonComponent } from './test-button/test-button.component';
 import { FormularioComponent } from './formulario/formulario.component';
 import { FormsModule } from '@angular/forms';
 import { NgifComponent } from './ngif/ngif.component';
+import { NgforComponent } from './ngfor/ngfor.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { NgifComponent } from './ngif/ngif.component';
     TestButtonComponent,
     FormularioComponent,
     NgifComponent,
+    NgforComponent,
   ],
   imports: [
     BrowserModule,
