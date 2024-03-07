@@ -23,4 +23,16 @@
 <app-formulario />
 <app-ngif />
 <app-ngfor />
+<div class="itemList">
+    <app-person *ngFor="let individual of person; let i = index"   class="divList"
+      [pName]="individual.name" 
+      [pProfession]="individual.profession" 
+      [pAge]="individual.age" 
+      [pStatus]="individual.status"
+      [pIndex]="i"
+      [isSelected]="isDivSelect === i"
+      (personSelected)="selectDiv($event)">
+    </app-person>
+</div>
+
 <router-outlet></router-outlet>

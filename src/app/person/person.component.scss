@@ -1,0 +1,23 @@
+.personList {
+  background-color: coral;
+  color: white;
+
+    &__select {
+      background-color: burlywood;
+      border: 1px solid white;
+  
+      p .personName {
+        text-transform: uppercase;
+      }
+    }
+}
+p {
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+.personName {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 30px;
+}

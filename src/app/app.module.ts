@@ -10,6 +10,7 @@ import { FormularioComponent } from './formulario/formulario.component';
 import { FormsModule } from '@angular/forms';
 import { NgifComponent } from './ngif/ngif.component';
 import { NgforComponent } from './ngfor/ngfor.component';
+import { PersonComponent } from './person/person.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { NgforComponent } from './ngfor/ngfor.component';
     FormularioComponent,
     NgifComponent,
     NgforComponent,
+    PersonComponent,
   ],
   imports: [
     BrowserModule,

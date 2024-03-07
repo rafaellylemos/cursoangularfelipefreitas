@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -15,6 +15,25 @@ export class AppComponent {
   isDisabled = true;
   isRedButton = true;
   isGreen = true;
+
+  person = [
+    { name: 'Rafaelly Lemos', profession: 'Fotógrafa',  age: 34, status: 'Namorando', },
+    { name: 'Pedro Lemos', profession: 'Estudante',  age: 9, status: 'Solteiro', },
+    { name: 'André Souza', profession: 'Desenvolvedor Frontend',  age: 35, status: 'Namorando', },
+    { name: 'Cassandra Trajano', profession: 'Professora',  age: 54, status: 'Casada', },
+  ]
+
+  @Output('divItemSelect') onDivItemSelectEmitt = new EventEmitter();
+
+  itemSelect() {
+    this.onDivItemSelectEmitt.emit
+  }
+
+  isDivSelect: number | undefined;
+
+  selectDiv(index: number) {
+    this.isDivSelect = index;
+  }
 
   handlePlanType(text: string) {
     this.cardPlanType = text;
