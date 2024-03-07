@@ -26,7 +26,7 @@ export class AppComponent {
   @Output('divItemSelect') onDivItemSelectEmitt = new EventEmitter();
 
   itemSelect() {
-    this.onDivItemSelectEmitt.emit
+    this.onDivItemSelectEmitt.emit;
   }
 
   isDivSelect: number | undefined;
@@ -51,4 +51,28 @@ export class AppComponent {
     const currentText = (event.target as HTMLInputElement).value;
     console.log(currentText);
   }
+
+  food = [
+    { name: 'Banana', price: 2, stock: false },
+    { name: 'Maçã', price: 4, stock: false },
+    { name: 'Laranja', price: 2, stock: true },
+    { name: 'Pêra', price: 6, stock: false },
+    { name: 'Abacaxi', price: 5, stock: true },
+    { name: 'Mamão', price: 1, stock: true },
+    { name: 'Kiwi', price: 7, stock: true },
+    { name: 'Uva', price: 3, stock: false },
+  ]
+
+  foodSelected: number | undefined;
+
+  foodSelectDiv(index: number) {
+    this.foodSelected = index;
+  }
+
+  @Output('divFoodItemSelect') onFoodItemSelectEmitt = new EventEmitter();
+
+  foodItemSelect(){
+    this.onFoodItemSelectEmitt.emit;
+  }
+
 }

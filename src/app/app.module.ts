@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { NgifComponent } from './ngif/ngif.component';
 import { NgforComponent } from './ngfor/ngfor.component';
 import { PersonComponent } from './person/person.component';
+import { FoodComponent } from './food/food.component';
 
 @NgModule({
   declarations: [
@@ -20,12 +21,16 @@ import { PersonComponent } from './person/person.component';
     NgifComponent,
     NgforComponent,
     PersonComponent,
+    FoodComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CardsModule,
-    FormsModule
+    FormsModule,
+  ],
+  exports: [
+    PersonComponent,
   ],
   providers: [
     provideAnimationsAsync()

@@ -34,5 +34,14 @@
       (personSelected)="selectDiv($event)">
     </app-person>
 </div>
+<div class="foodList" *ngFor="let item of food; let i = index;">
+  <app-food [foodName]="item.name"
+  [foodPrice]="item.price"
+  [foodStock]="item.stock"
+  [isFoodSelected]="foodSelected === i"
+  [foodIndex]="i"
+  (foodSelect)="foodSelectDiv($event)"
+  />
+</div>
 
 <router-outlet></router-outlet>

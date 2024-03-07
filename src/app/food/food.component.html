@@ -1,0 +1,9 @@
+<div class="foodItem" (click)="foodSelectDiv()" [class.foodItem__foodSelected]="isFoodSelected && foodStock">
+  <p class="foodName">{{ foodName }}</p>
+  <p class="foodPrice">R$ {{ foodPrice }},00</p>
+  <p *ngIf="foodStock; else elseNo" class="foodItem__foodStockY">Em estoque!</p>
+  <ng-template #elseNo>
+    <p class="foodItem__foodStockN">Sem estoque!</p>
+  </ng-template>
+  <button *ngIf="foodButton && isFoodSelected" class="bt-food">Comprar</button>
+</div>
