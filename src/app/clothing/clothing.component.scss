@@ -1,0 +1,27 @@
+.listClothings {
+  border: 1px solid beige;
+  background-color: cornflowerblue;
+  padding: 10px;
+  cursor: pointer;
+
+  &__clothingSelect {
+    background-color: rgb(57, 54, 250);
+    .clothingType {
+      text-transform: uppercase;
+    }
+    .newColection {
+      color: gray;
+    }
+  }
+}
+.clothingType {
+  margin:0;
+  font-size: 20px;
+}
+.newColection {
+  color: rgb(85, 85, 21);
+  font-size: 14px;
+}
+.clothingValue {
+  font-size: 18 px;
+}

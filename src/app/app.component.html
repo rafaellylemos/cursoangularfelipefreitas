@@ -43,5 +43,16 @@
   (foodSelect)="foodSelectDiv($event)"
   />
 </div>
+<div class="itemClothing">
+  <app-clothing class="cList" *ngFor="let obj of clothing; let i = index;"
+  [clothingType]="obj.type"
+  [clothingColection]="obj.colection"
+  [isNewColection]="obj.newColection"
+  [clothingValue]="obj.value"
+  [clothingIndex]="i"
+  [isClothingSelected]="isClothingSelected === i"
+  (clothingClicked)="selectClothing($event)"
+></app-clothing>
+</div>
 
 <router-outlet></router-outlet>

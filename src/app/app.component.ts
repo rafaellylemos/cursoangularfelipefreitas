@@ -75,4 +75,22 @@ export class AppComponent {
     this.onFoodItemSelectEmitt.emit;
   }
 
+  clothing = [
+    {type:'Blusa', colection: 'Recife', newColection: false, value: 99, },
+    {type:'Blusa', colection: 'Olinda', newColection: false, value: 99, },
+    {type:'Blusa', colection: 'Sampa', newColection: true, value: 119, },
+    {type:'short', colection: 'Rio', newColection: false, value: 79, },
+    {type:'Cropped', colection: 'Jampa', newColection: true, value: 54, },
+    {type:'Blusa', colection: 'Brasília', newColection: true, value: 119, },
+    {type:'Blusa', colection: 'Minas', newColection: true, value: 119, },
+    {type:'Short', colection: 'Recife', newColection: false, value: 79, },
+    {type:'Calça', colection: 'Recife', newColection: false, value: 187, },
+    {type:'Vestido', colection: 'Sampa', newColection: true, value: 210, }
+  ]
+
+  isClothingSelected: number | undefined;
+
+  selectClothing(index: number) {
+    this.isClothingSelected = index;
+  }
 }

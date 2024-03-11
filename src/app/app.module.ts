@@ -12,6 +12,7 @@ import { NgifComponent } from './ngif/ngif.component';
 import { NgforComponent } from './ngfor/ngfor.component';
 import { PersonComponent } from './person/person.component';
 import { FoodComponent } from './food/food.component';
+import { ClothingComponent } from './clothing/clothing.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { FoodComponent } from './food/food.component';
     NgforComponent,
     PersonComponent,
     FoodComponent,
+    ClothingComponent,
   ],
   imports: [
     BrowserModule,

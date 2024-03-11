@@ -1,0 +1,5 @@
+<div class="listClothings" [class.listClothings__clothingSelect]="isClothingSelected" (click)="onClothingClicked()">
+  <p class="clothingType">{{ clothingType }} {{ clothingColection }}</p>
+  <p class="newColection"*ngIf="isNewColection"><i>Coleção nova</i>!</p>
+  <p class="clothingValue">R$ {{ clothingValue }},00</p>
+</div>
