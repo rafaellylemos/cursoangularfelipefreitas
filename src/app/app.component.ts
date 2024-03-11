@@ -93,4 +93,24 @@ export class AppComponent {
   selectClothing(index: number) {
     this.isClothingSelected = index;
   }
+
+  bgColor: 'white' | 'black'= 'white';
+  buttonBgColor: 'white' | 'black'= 'black';
+  colorTextContentButton: 'white' | 'black'= 'white';
+  textContentButton: string = 'Modo escuro';
+  borderColorButton: 'white' | 'black' = 'black';
+
+  onChangeBackgroundColorPage() {
+    if (this.bgColor === 'white') {
+      this.bgColor = 'black';
+      this.textContentButton = 'Modo claro';
+      this.colorTextContentButton = 'white';
+      this.borderColorButton = 'white';
+    } else {
+      this.bgColor = 'white';
+      this.textContentButton = 'Modo escuro';
+      this.colorTextContentButton = 'black';
+      this.borderColorButton = 'black';
+    }
+  }
 }
