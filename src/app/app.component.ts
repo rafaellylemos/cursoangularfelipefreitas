@@ -96,19 +96,19 @@ export class AppComponent {
 
   bgColor: 'white' | 'black'= 'white';
   buttonBgColor: 'white' | 'black'= 'black';
-  colorTextContentButton: 'white' | 'black'= 'white';
-  textContentButton: string = 'Modo escuro';
+  colorTextContentButton: 'white' | 'black'= 'black';
+  textContentButton: string = 'Dark Mode';
   borderColorButton: 'white' | 'black' = 'black';
 
   onChangeBackgroundColorPage() {
     if (this.bgColor === 'white') {
       this.bgColor = 'black';
-      this.textContentButton = 'Modo claro';
+      this.textContentButton = 'Light Mode';
       this.colorTextContentButton = 'white';
       this.borderColorButton = 'white';
     } else {
       this.bgColor = 'white';
-      this.textContentButton = 'Modo escuro';
+      this.textContentButton = 'Dark Mode';
       this.colorTextContentButton = 'black';
       this.borderColorButton = 'black';
     }

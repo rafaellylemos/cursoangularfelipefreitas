@@ -13,6 +13,8 @@ import { NgforComponent } from './ngfor/ngfor.component';
 import { PersonComponent } from './person/person.component';
 import { FoodComponent } from './food/food.component';
 import { ClothingComponent } from './clothing/clothing.component';
+import { PipesComponent } from './pipes/pipes.component';
+import { StatusClassPipe } from './pipe/status-class.pipe';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { ClothingComponent } from './clothing/clothing.component';
     PersonComponent,
     FoodComponent,
     ClothingComponent,
+    PipesComponent,
+    StatusClassPipe,
   ],
   imports: [
     BrowserModule,

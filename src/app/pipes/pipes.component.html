@@ -1,0 +1,7 @@
+<h1>{{ text | uppercase }}</h1>
+<p>{{ infos | json }}</p>
+<!-- O pipe json é mais utilizado pra desenvolvimento/debug e não pro cliente final -->
+<br />
+<p [class]="pessoa1.status | statusClass">{{ pessoa1.name }}</p>
+<p [class]="pessoa2.status | statusClass">{{ pessoa2.name }}</p>
+<p [class]="pessoa3.status | statusClass">{{ pessoa3.name }}</p>
