@@ -15,6 +15,7 @@ import { FoodComponent } from './food/food.component';
 import { ClothingComponent } from './clothing/clothing.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { StatusClassPipe } from './pipe/status-class.pipe';
+import { FlyerPromoComponent } from './flyer-promo/flyer-promo.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { StatusClassPipe } from './pipe/status-class.pipe';
     ClothingComponent,
     PipesComponent,
     StatusClassPipe,
+    FlyerPromoComponent,
   ],
   imports: [
     BrowserModule,

@@ -69,5 +69,14 @@
 <div class="div">
   <app-pipes />
 </div>
+<div class="flyerDiv">
+  <app-flyer-promo *ngFor="let cidade of city; let i = index;" 
+  [cidade]="cidade.name" 
+  [passagem]="cidade.price"
+  [flyerIndex]="i"
+  [isFlyerSelected]="isFlyerClick === i"
+  (classSelect)="flyerClicked($event)"
+  />
+</div>
 
 <router-outlet></router-outlet>

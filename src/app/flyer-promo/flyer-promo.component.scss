@@ -1,0 +1,13 @@
+.flyer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 200px;
+  background-color: red;
+  border-radius: 10px;
+
+  &__selected {
+    background-color: black;
+    color: white;
+  }
+}

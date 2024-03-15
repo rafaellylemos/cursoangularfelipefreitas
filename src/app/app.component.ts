@@ -113,4 +113,20 @@ export class AppComponent {
       this.borderColorButton = 'black';
     }
   }
+
+  city = [
+    {name: 'São Paulo', price: 99},
+    {name: 'Rio de Janeiro', price: 99},
+    {name: 'Recife', price: 59},
+    {name: 'Bahia', price: 79},
+    {name: 'Minas Gerais', price: 129},
+    {name: 'Brasília', price: 119}
+  ]
+
+  isFlyerClick: number | undefined;
+
+  flyerClicked(index: number) {
+    this. isFlyerClick = index;
+  }
+
 }
